@@ -1,0 +1,190 @@
+img.resize{
+  max-height:30%; 
+  max-width:30%;
+  float: left;
+
+}
+html,body{
+  height: 100%;
+  color:white;
+ background-image: url(./images/back6.jpg);
+
+}
+#nav{
+	
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color:#E6E6FA;
+	position: fixed;
+  width:100%;
+  height: 9%;
+  top:0;
+  display: inline-block;
+  z-index: 10;
+}
+#leftnav{
+	float: left;
+	font-size: 18px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	width: 30%;background-color: black;
+  line-height: 30px; 
+}
+#rightnav{
+	float:right;
+	font-size: 18px;
+    font-family:Tahoma, Geneva, sans-serif;
+    width: 43%;
+
+    }
+
+#rightnav a{
+	display: inline-block;
+	color: black;
+	text-align: center;
+  	padding: 13px 15px;
+    text-decoration:none;
+}
+#rightnav a:hover:not(.active) {
+  border-bottom: 3px solid #800000; 
+  height: 30px;
+  line-height:35px;
+}
+.active{
+	
+	height: 30px;
+    line-height: 35px;
+    border-bottom: 3px solid #800000; 
+}
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  height: 10%;
+  background-color: black;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  padding-top: 50px;
+  font-size: 20px;
+ font-family:Tahoma, Geneva, sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column.side, .column.middle {
+    width: 100%;
+    height: 100%
+  }
+}
+#quotes{
+  position: absolute;
+  top:20%;
+  bottom: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse wrap;
+  z-index: 5;
+  padding-left:15%;
+  padding-right:15%;  
+ 
+}
+#quotes div{
+  width: 300px;
+  height: 300px;
+  padding-bottom:25px;
+  color: black;    
+  font-family: Tahoma, Geneva, sans-serif;
+}
+#quotes img{
+  width:300px;
+  height:200px;
+}
+#quotes button{
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 10px;
+  width: 80px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+    
+}
+.btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Green */
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Red */
+.danger {
+  border-color: #f44336;
+  color: red
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}

@@ -1,0 +1,114 @@
+
+img.resize{
+  max-height:30%; 
+  max-width:30%;
+  float: left;
+
+}
+html,body{
+  height: 100%;
+  height: 100%;
+   color: white;
+  background-color: #606060;
+}
+.novels
+{
+ padding-top: 15%;
+ padding-left:5%;
+ padding-right: 5%;
+ display:flex;
+ justify-content: space-between;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+.btn{
+  position: relative;
+  background-color: black;
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 10px;
+  color: white;
+  padding: 8px 9px;
+  text-align: center;
+  text-decoration: none;  
+}
+
+#nav{
+  
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color:#E6E6FA;
+  position: fixed;
+  width:100%;
+  height: 9%;
+  top:0;
+  display: inline-block;
+}
+#leftnav{
+  float: left;
+  font-size: 18px;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center;
+  width: 30%;background-color: black;
+  line-height: 30px; 
+}
+#rightnav{
+  float:right;
+  font-size: 18px;
+    font-family:Tahoma, Geneva, sans-serif;
+    width: 43%;
+
+    }
+
+#rightnav a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+    padding: 13px 15px;
+    text-decoration:none;
+}
+#rightnav a:hover:not(.active) {
+  border-bottom: 3px solid #800000; 
+  height: 30px;
+  line-height:35px;
+}
+.active{
+  
+  height: 30px;
+    line-height: 35px;
+    border-bottom: 3px solid #800000; 
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+  height: 10%;
+  background-color: black;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+  padding-top: 50px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column.side, .column.middle {
+    width: 100%;
+    height: 100%
+  }
+}
